@@ -1,0 +1,304 @@
+{% extends 'base-fe.html.twig' %}
+
+{% block meta %}
+	<meta name="robots" value="no-index, no-follow">
+{% endblock %}
+{% block title %}KWANDA
+{% endblock %}
+
+{% block body %}
+
+<!--==========================
+	Header
+	============================-->
+	<header id="header">
+		<div class="container-fluid">
+
+			<div id="logo" class="pull-left">
+				<h1>
+					<a href="#intro" class="scrollto"><img src="img/logo.png" alt="" title="" /></a>
+				</h1>
+				<!-- Uncomment below if you prefer to use an image logo -->
+				<!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+			</div>
+
+			<nav id="nav-menu-container">
+				<ul class="nav-menu">
+					<li class="menu-has-children menu-active">
+						<a href="#intro">WHO WE ARE</a>
+                        <ul>
+							<li><a href="{{ path('app_about') }}">About us</a></li>
+							<li><a href="{{ path('app_service') }}">Services</a></li>
+							<li><a href="{{ path('app_emergency') }}">Emergency Response</a></li>
+							<li><a href="{{ path('app_skills') }}">Our Skills</a></li>
+							<li><a href="{{ path('app_ournumber') }}">Our Numbers</a></li>
+							<li><a href="{{ path('app_team') }}">Board & GM Team</a></li>
+						</ul>
+					</li>
+
+                    <li class="menu-has-children">
+						<a href="#intro">OUR PORTFOLIO</a>
+                        <ul>
+							<li><a href="{{ path('app_portfolio') }}">Our Portfolio</a></li>
+							<li><a href="{{ path('app_clients') }}">Our Clients</a></li>
+							<li><a href="{{ path('app_testimonial') }}">Testimonials</a></li>
+						</ul>
+					</li>
+
+                    <li class="menu-has-children">
+						<a href="#intro">SUSTAINABILITY</a>
+                        <ul>
+							<li><a href="{{ path('app_qhse') }}">QHSE</a></li>
+							<li><a href="{{ path('app_social') }}">Social Responsibility </a></li>
+							<li><a href="{{ path('app_sport') }}">Sports Promotion</a></li>
+							<li><a href="{{ path('app_news') }}">Kwanda News</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="#contact">SIGNUP</a>
+					</li>
+
+					<li>
+						<a href="#contact">SIGNIN</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- #nav-menu-container -->
+		</div>
+	</header>
+	<!-- #header -->
+
+	<!--==========================
+	
+	<!-- Page Header Start -->
+	<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+		<div class="container text-center py-5">
+			<h1 class="display-2 text-white mb-4 animated slideInDown">About</h1>
+			<nav aria-label="breadcrumb animated slideInDown">
+				<ol class="breadcrumb justify-content-center mb-0">
+					<li class="breadcrumb-item">
+						<a href="{{ path('app_home2') }}">Home</a>
+					</li>
+					{# <li class="breadcrumb-item">
+						<a href="#">Rien</a>
+					</li> #}
+					<li class="breadcrumb-item text-primary" aria-current="page">About</li>
+				</ol>
+			</nav>
+		</div>
+	</div>
+	<!-- Page Header End -->
+	<main id="main">
+
+		<!--Intro Section End -->
+
+		<!--Featured Services Section -->
+			<section id="featured-services"> <div class="container">
+				<div class="row">
+
+					<div class="col-lg-4 box">
+						<i class="ion-ios-bookmarks-outline"></i>
+						<h4 class="title">
+							<a href="">Integrated Logistics Services</a>
+						</h4>
+						<p class="description">Offering a full range of services to the O&G industry in the subsariane region, providing to each company with facilities and dedicated equipement for the management and operation of its logistics activities.</p>
+					</div>
+
+					<div class="col-lg-4 box box-bg">
+						<i class="ion-ios-heart-outline"></i>
+						<h4 class="title">
+							<a href="">Oil Platforms Geographic Localization</a>
+						</h4>
+						<p class="description">Geographically, the Kwanda Base is very well positioned in Angola and the sub-Saharan region to ensure logistical support for the O&G industry.</p>
+					</div>
+
+					<div class="col-lg-4 box">
+						<i class="ion-ios-stopwatch-outline"></i>
+						<h4 class="title">
+							<a href="">Operation Services Availability 24h/7</a>
+						</h4>
+						<p class="description">To meet the numerous needs of its customers, KWANDA has work regimes that guarantee 24/7 operation, ensuring the implementation of property security policies - port facilities and finally occupational hygiene and safety.</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- #featured-services -->
+
+		<!-- About Us Section -->
+		<section id="about">
+			<div class="container">
+
+				<header class="section-header">
+					<h3>About Us</h3>
+					<p>Kwanda is a company whose capital corresponds to a 49% stake in Delong Hersent, S.A. (in the meantime incorporated by merger with Saipem, S.A.); 30% of Sonangol EP (in the meantime transferred to Sonangol Holdings Lda.); 11% from CASOY and 10% from Sangemetal. The KWANDA Base is where it is located, located in the municipality of Soyo, Province of Zaire. The Kwanda Base currently has an uncovered area of 104,984 hectares.</p>
+				</header>
+
+				<div class="row about-cols">
+
+					<div class="col-md-4 wow fadeInUp">
+						<div class="about-col">
+							<div class="img">
+								<img src="img/about-mission.jpg" alt="" class="img-fluid">
+								<div class="icon">
+									<i class="ion-ios-speedometer-outline"></i>
+								</div>
+							</div>
+							<h2 class="title">
+								<a href="#">Our Mission</a>
+							</h2>
+							<p>
+								Solve customers’ logistical and port challenges through integrated services.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+						<div class="about-col">
+							<div class="img">
+								<img src="img/about-plan.jpg" alt="" class="img-fluid">
+								<div class="icon">
+									<i class="ion-ios-list-outline"></i>
+								</div>
+							</div>
+							<h2 class="title">
+								<a href="#">Our Plan</a>
+							</h2>
+							<p>
+								To implement the strategic plan bold steps defined for yearly till 2030.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+						<div class="about-col">
+							<div class="img">
+								<img src="img/about-vision.jpg" alt="" class="img-fluid">
+								<div class="icon">
+									<i class="ion-ios-eye-outline"></i>
+								</div>
+							</div>
+							<h2 class="title">
+								<a href="#">Vision</a>
+							</h2>
+							<p>
+								To be a logistics base with integrated services of excellence..
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<!-- #about -->
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-3 col-md-6 footer-info">
+						<h3>KWANDA</h3>
+						<p>Integrated Logistics Services support Partner, towards excellence for Customers satisfaction!.</p>
+					</div>
+
+					<div class="col-lg-3 col-md-6 footer-links">
+						<h4>Useful Links</h4>
+						<ul>
+							<li>
+								<i class="ion-ios-arrow-right"></i>
+								<a href="#">Home</a>
+							</li>
+							<li>
+								<i class="ion-ios-arrow-right"></i>
+								<a href="#">About us</a>
+							</li>
+							<li>
+								<i class="ion-ios-arrow-right"></i>
+								<a href="#">Services</a>
+							</li>
+							<li>
+								<i class="ion-ios-arrow-right"></i>
+								<a href="#">Terms of service</a>
+							</li>
+							<li>
+								<i class="ion-ios-arrow-right"></i>
+								<a href="#">Privacy policy</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-lg-3 col-md-6 footer-contact">
+						<h4>Contact Us</h4>
+						<p>
+							Belas Business Park, Edifiício Namibe, 5° Andar - Talatona
+							<br>
+							Luanda, NIF 5403049134<br>
+							ANGOLA
+							<br>
+							<strong>Phone:</strong>
+							+244 226425200<br>
+							<strong>Email:</strong>
+							contact@kwanda.co.ao<br>
+						</p>
+
+						<div class="social-links">
+							<a href="#" class="twitter">
+								<i class="fa fa-twitter"></i>
+							</a>
+							<a href="#" class="facebook">
+								<i class="fa fa-facebook"></i>
+							</a>
+							<a href="#" class="instagram">
+								<i class="fa fa-instagram"></i>
+							</a>
+							<a href="#" class="google-plus">
+								<i class="fa fa-google-plus"></i>
+							</a>
+							<a href="#" class="linkedin">
+								<i class="fa fa-linkedin"></i>
+							</a>
+						</div>
+
+					</div>
+
+					<div class="col-lg-3 col-md-6 footer-newsletter">
+						<h4>Our News</h4>
+						<p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+						<form action="" method="post">
+							<input type="email" name="email"><input type="submit" value="Subscribe">
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="copyright">
+				&copy; Copyright
+				<strong>KWANDA</strong>. All Rights Reserved
+			</div>
+			<div
+				class="credits">
+				<!-- All the links in the footer should remain intact.
+				You can delete the links only if you purchased the pro version.
+				Licensing information: https://bootstrapmade.com/license/
+				Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=KWANDA
+				-->
+				Best
+				<a href="https://bootstrapmade.com/"></a>
+				by KWANDA
+			</div>
+		</div>
+	</footer>
+	<!-- #footer -->
+
+	<a href="#" class="back-to-top">
+		<i class="fa fa-chevron-up"></i>
+	</a>
+
+{% endblock %}
