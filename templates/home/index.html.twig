@@ -16,7 +16,7 @@
 
 			<div id="logo" class="pull-left">
 				<h1>
-					<a href="#intro" class="scrollto"><img src="img/logo.png" alt="" title="" /></a>
+					<a href="{{ path('app_home') }}" class="scrollto"><img src="img/logo.png" alt="" title="" /></a>
 				</h1>
 				<!-- Uncomment below if you prefer to use an image logo -->
 				<!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
@@ -24,6 +24,11 @@
 
 			<nav id="nav-menu-container">
 				<ul class="nav-menu">
+					
+					<li class="menu-has-children menu-active">
+						<a href="{{ path('app_home') }}"></a>
+					</li>
+
 					<li class="menu-has-children menu-active">
 						<a href="#intro">WHO WE ARE</a>
                         <ul>
@@ -35,7 +40,7 @@
 							<li><a href="{{ path('app_team') }}">Board & GM Team</a></li>
 						</ul>
 					</li>
-
+					
                     <li class="menu-has-children">
 						<a href="#intro">OUR PORTFOLIO</a>
                         <ul>
