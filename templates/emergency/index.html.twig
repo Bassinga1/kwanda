@@ -16,7 +16,7 @@
 
 			<div id="logo" class="pull-left">
 				<h1>
-					<a href="#intro" class="scrollto"><img src="img/logo.png" alt="" title="" /></a>
+					<a href="{{ path('app_home2') }}" class="scrollto"><img src="img/logo.png" alt="" title="" /></a>
 				</h1>
 				<!-- Uncomment below if you prefer to use an image logo -->
 				<!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
@@ -71,117 +71,26 @@
 
 	<!--==========================
 
-<!--Intro Section Start -->
-	<section id="intro">
-		<div class="intro-container">
-			<div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
-
-				<ol class="carousel-indicators"></ol>
-
-				<div class="carousel-inner" role="listbox">
-
-					<div class="carousel-item active" style="background-image: url('img/intro-carousel/1.jpg');">
-						<div class="carousel-container">
-							<div class="carousel-content">
-								<h2>Committment with Custmers Satisfaction</h2>
-								<p>Since its creation, KWANDA's focus has been to ensure the Base's operability, aiming for the satisfaction of its customers and interested parties.</p>
-								<a href="#featured-services" class="btn-get-started scrollto">Read More</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="carousel-item" style="background-image: url('img/intro-carousel/2.jpg');">
-						<div class="carousel-container">
-							<div class="carousel-content">
-								<h2>Commitment with Safe Operations</h2>
-								<p>Operations at the KWANDA Base comply with HSE standards and procedures in order to promote a safety culture at all levels with risk assessment, permit work, near miss control and other practices. Certified by ISO 9001, the fight continues for 45001, 14001, ...</p>
-								<a href="#featured-services" class="btn-get-started scrollto">Read More</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="carousel-item" style="background-image: url('img/intro-carousel/3.jpg');">
-						<div class="carousel-container">
-							<div class="carousel-content">
-								<h2>Commitment with Security</h2>
-								<p>For decades, KWANDA has assumed a considerable cost aimed at the asset security of infrastructures and operational conditions in order to comply with ISPS requirements and requirements, thus allowing us to maintain the level at which we are certified.</p>
-								<a href="#featured-services" class="btn-get-started scrollto">Read More</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="carousel-item" style="background-image: url('img/intro-carousel/4.jpg');">
-						<div class="carousel-container">
-							<div class="carousel-content">
-								<h2>Commitment with Busisness Sustainbility</h2>
-								<p>KWANDA Partners require productive operational commitment and positive financial management in order to guarantee always active and evident sustainability.</p>
-								<a href="#featured-services" class="btn-get-started scrollto">Read More</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="carousel-item" style="background-image: url('img/intro-carousel/5.jpg');">
-						<div class="carousel-container">
-							<div class="carousel-content">
-								<h2>Commitment with Collaborators Satisfaction</h2>
-								<p>With satisfactory operational and financial results, KWANDA is committed to promoting actions aimed at contributing to the development of the social well-being of its employees who, for years and years, 24/7, have demonstrated significant dedication to the company's business.</p>
-								<a href="#featured-services" class="btn-get-started scrollto">Read More</a>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-
-				<a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
-					<span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-
-			</div>
+	<!-- Page Header Start -->
+	<div id="headerstart" class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+		<div class="container text-center py-5">
+			<h1 class="display-2 text-white mb-4 animated slideInDown"></h1>
+			<nav aria-label="breadcrumb animated slideInDown">
+				<ol class="breadcrumb justify-content-center mb-0">
+					<li class="breadcrumb-item">
+						<a href="{{ path('app_home2') }}">Home</a>
+					</li>
+					{# <li class="breadcrumb-item">
+						<a href="#">Pages</a>
+					</li> #}
+					<li class="breadcrumb-item text-primary" aria-current="page">Emergency</li>
+				</ol>
+			</nav>
 		</div>
-	</section>
-	<!-- #intro -->
-
-    <main id="main">
-    <!--Intro Section End -->
-
-		<!--Featured Services Section -->
-			<section id="featured-services"> <div class="container">
-				<div class="row">
-
-					<div class="col-lg-4 box">
-						<i class="ion-ios-bookmarks-outline"></i>
-						<h4 class="title">
-							<a href="">Integrated Logistics Services</a>
-						</h4>
-						<p class="description">Offering a full range of services to the O&G industry in the subsariane region, providing to each company with facilities and dedicated equipement for the management and operation of its logistics activities.</p>
-					</div>
-
-					<div class="col-lg-4 box box-bg">
-						<i class="ion-ios-heart-outline"></i>
-						<h4 class="title">
-							<a href="">Oil Platforms Geographic Localization</a>
-						</h4>
-						<p class="description">Geographically, the Kwanda Base is very well positioned in Angola and the sub-Saharan region to ensure logistical support for the O&G industry.</p>
-					</div>
-
-					<div class="col-lg-4 box">
-						<i class="ion-ios-stopwatch-outline"></i>
-						<h4 class="title">
-							<a href="">Operation Services Availability 24h/7</a>
-						</h4>
-						<p class="description">To meet the numerous needs of its customers, KWANDA has work regimes that guarantee 24/7 operation, ensuring the implementation of property security policies - port facilities and finally occupational hygiene and safety.</p>
-					</div>
-
-				</div>
-			</div>
-		</section>
-		<!-- #featured-services -->
+	</div>
+	<!-- Page Header End -->
+	
+	<main id="main">
 
         <!-- Call To Action Section -->
 		<section id="call-to-action" class="wow fadeIn">
@@ -193,7 +102,7 @@
 			</div>
 		</section>
 		<!-- #call-to-action -->
-    </main>
+	</main>
 
     <!-- Footer -->
 	<footer id="footer">
