@@ -14,14 +14,6 @@
 	<header id="header">
 		<div class="container-fluid">
 
-			<div id="logo" class="pull-left">
-				<h1>
-					<a href="{{ path('app_home') }}" class="scrollto"><img src="img/logo.png" alt="" title="" /></a>
-				</h1>
-				<!-- Uncomment below if you prefer to use an image logo -->
-				<!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
-			</div>
-
 			<nav id="nav-menu-container">
 				<ul class="nav-menu">
 					
@@ -61,11 +53,11 @@
 					</li>
 
 					<li>
-						<a href="#contact">SIGNUP</a>
+						<a href="#contact">CONTACT US</a>
 					</li>
 
 					<li>
-						<a href="#contact">SIGNIN</a>
+						<a href="#"></a>
 					</li>
 				</ul>
 			</nav>
@@ -217,15 +209,15 @@
 						<ul>
 							<li>
 								<i class="ion-ios-arrow-right"></i>
-								<a href="#">Home</a>
+								<a href="{{ path('app_home') }}">Home</a>
 							</li>
 							<li>
 								<i class="ion-ios-arrow-right"></i>
-								<a href="#">About us</a>
+								<a href="{{ path('app_about') }}">About us</a>
 							</li>
 							<li>
 								<i class="ion-ios-arrow-right"></i>
-								<a href="#">Services</a>
+								<a href="{{ path('app_service') }}">Services</a>
 							</li>
 							<li>
 								<i class="ion-ios-arrow-right"></i>
@@ -284,7 +276,15 @@
 			</div>
 		</div>
 
-		<div class="container">
+		<div class="container-fluid">
+			<div id="logo" class="pull-left mt-4">
+				<h1>
+					<a href="{{ path('app_home') }}" class="scrollto"><img src="img/logo.png" alt="" title="" /></a>
+				</h1>
+				<!-- Uncomment below if you prefer to use an image logo -->
+				<!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+			</div>
+
 			<div class="copyright">
 				&copy; Copyright
 				<strong>KWANDA</strong>. All Rights Reserved
@@ -304,7 +304,7 @@
 	</footer>
 	<!-- #footer -->
 
-	<a href="#" class="back-to-top">
+	<a href="{{ path('app_home') }}" class="back-to-top">
 		<i class="fa fa-chevron-up"></i>
 	</a>
 
